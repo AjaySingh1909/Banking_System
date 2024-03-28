@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/soprasteriadb
+    username: root
+    password: Ajay@1909
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate: 
+      ddl-auto: update
+    show-sql: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
